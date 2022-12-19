@@ -205,4 +205,10 @@ export var translates = {
     wireguardMTU: {
         "": "MTU",
     },
+
+    //Gproxy
+    serversni: {
+        "zh_CN": "服务器名称指示",
+        "": "SNI",
+    },
 }

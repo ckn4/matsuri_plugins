@@ -68,4 +68,14 @@ download_hysteria() {
   dl_and_chmod x86_64/libhysteria.so "https://github.com/MatsuriDayo/hysteria/releases/download/$VERSION/hysteria-linux-amd64"
 }
 
+download_gproxy() {
+  VERSION="v20220707"
+  mkdir_libs "app_gproxy/libs"
+
+  dl_and_chmod arm64-v8a/libgproxy.so "https://github.com/ckn4/matsuri_plugins/releases/download/binary/gproxy_android"
+  dl_and_chmod armeabi-v7a/libgproxy.so "https://github.com/txthinking/brook/releases/download/$VERSION/brook_linux_arm7"
+  dl_and_chmod x86/libgproxy.so "https://github.com/txthinking/brook/releases/download/$VERSION/brook_linux_386"
+  dl_and_chmod x86_64/libgproxy.so "https://github.com/txthinking/brook/releases/download/$VERSION/brook_linux_amd64"
+}
+
 download_"$1"

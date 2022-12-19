@@ -69,6 +69,15 @@ class utilClass {
         }
     }
 
+    decodeB64StrNoJson(b64Str) {
+        try {
+            let jsonStr = Base64.decode(b64Str)
+            return jsonStr
+        } catch (error) {
+            return {}
+        }
+    }
+
     encodeB64Str(obj) {
         return Base64.encode(JSON.stringify(obj), true)
     }
