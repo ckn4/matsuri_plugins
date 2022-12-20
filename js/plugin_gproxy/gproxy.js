@@ -145,7 +145,7 @@ class gproxyClass {
             v.nekoRunConfigs = [
                 {
                     "name": "config.yaml",
-                    "content": yaml.dump(JSON.stringify(t0))
+                    "content": yaml.dump(t0)
                 }
             ]
 
