@@ -118,9 +118,6 @@ class gproxyClass {
 
             let t0 = {
                 "mode": "client",
-                "log": { 
-                    "level": "ERROR"
-                },
                 "pool": { 
                     "minSize": 16, 
                     "maxSize": 32, 
